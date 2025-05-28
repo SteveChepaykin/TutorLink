@@ -1,7 +1,11 @@
 import type {NextConfig} from 'next';
 
+const REPO_NAME = 'TutorLink';
+
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: 'export',
+  basePath: process.env.NODE_ENV === 'production' ? `/${REPO_NAME}` : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? `/${REPO_NAME}/` : '/',
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -9,6 +13,7 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
   },
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
@@ -16,8 +21,15 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'placehold.co',
+        port: '',
+        pathname: '/**',
+      }
     ],
   },
 };
 
 export default nextConfig;
+
