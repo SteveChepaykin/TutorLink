@@ -1,5 +1,5 @@
-# Firebase Studio
+# Tutor Link
 
-This is a NextJS starter in Firebase Studio.
+This is a project for teachers and their students - TutorLink!
 
-To get started, take a look at src/app/page.tsx.
+Made for communication and planning with ease.
