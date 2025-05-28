@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 96%; /* Light Gray */
+    --foreground: 0 0% 3.9%; /* Default Dark */
+    --card: 0 0% 96%; /* Light Gray */
+    --card-foreground: 0 0% 3.9%; /* Default Dark */
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 0 0% 3.9%; /* Default Dark */
+    --primary: 174 100% 29%; /* Teal */
+    --primary-foreground: 0 0% 98%; /* Default Light */
+    --secondary: 174 43% 85%; /* Soft Blue */
+    --secondary-foreground: 174 100% 15%; /* Darker Teal */
+    --muted: 174 43% 92%; /* Lighter Soft Blue */
+    --muted-foreground: 0 0% 45.1%; /* Default Gray */
+    --accent: 174 100% 35%; /* Slightly Lighter Teal */
+    --accent-foreground: 0 0% 98%; /* Default Light */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 174 43% 80%; /* Slightly Darker Soft Blue */
+    --input: 174 43% 90%; /* Slightly Darker Lighter Soft Blue */
+    --ring: 174 100% 29%; /* Teal */
+    --chart-1: 174 100% 29%; /* Teal */
+    --chart-2: 174 43% 85%; /* Soft Blue */
+    --chart-3: 174 100% 20%; /* Dark Teal */
+    --chart-4: 190 50% 70%; /* Lighter Blue */
+    --chart-5: 160 50% 60%; /* Greenish Blue */
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 96%; /* Light Gray */
+    --sidebar-foreground: 0 0% 3.9%; /* Default Dark */
+    --sidebar-primary: 174 100% 29%; /* Teal */
+    --sidebar-primary-foreground: 0 0% 98%; /* Default Light */
+    --sidebar-accent: 174 43% 85%; /* Soft Blue */
+    --sidebar-accent-foreground: 174 100% 15%; /* Darker Teal */
+    --sidebar-border: 174 43% 80%; /* Slightly Darker Soft Blue */
+    --sidebar-ring: 174 100% 29%; /* Teal */
+  }
+
+  .dark {
+    --background: 240 10% 3.9%; /* Dark Background */
+    --foreground: 0 0% 98%; /* Default Light */
+    --card: 240 10% 3.9%; /* Dark Background */
+    --card-foreground: 0 0% 98%; /* Default Light */
+    --popover: 240 10% 3.9%; /* Dark Background */
+    --popover-foreground: 0 0% 98%; /* Default Light */
+    --primary: 174 100% 35%; /* Slightly Lighter Teal */
+    --primary-foreground: 0 0% 9%; /* Dark Text */
+    --secondary: 174 43% 70%; /* Darker Soft Blue */
+    --secondary-foreground: 0 0% 98%; /* Default Light */
+    --muted: 174 43% 60%; /* Darker Soft Blue */
+    --muted-foreground: 0 0% 63.9%; /* Lighter Gray */
+    --accent: 174 100% 29%; /* Teal */
+    --accent-foreground: 0 0% 98%; /* Default Light */
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 174 43% 50%; /* Even Darker Soft Blue */
+    --input: 174 43% 55%; /* Slightly lighter Darker Soft Blue */
+    --ring: 174 100% 35%; /* Slightly Lighter Teal */
+    --chart-1: 174 100% 35%; /* Slightly Lighter Teal */
+    --chart-2: 174 43% 70%; /* Darker Soft Blue */
+    --chart-3: 174 100% 20%; /* Dark Teal */
+    --chart-4: 190 50% 70%; /* Lighter Blue */
+    --chart-5: 160 50% 60%; /* Greenish Blue */
+    --sidebar-background: 240 10% 3.9%; /* Dark Background */
+    --sidebar-foreground: 0 0% 98%; /* Default Light */
+    --sidebar-primary: 174 100% 35%; /* Slightly Lighter Teal */
+    --sidebar-primary-foreground: 0 0% 9%; /* Dark Text */
+    --sidebar-accent: 174 43% 70%; /* Darker Soft Blue */
+    --sidebar-accent-foreground: 0 0% 98%; /* Default Light */
+    --sidebar-border: 174 43% 50%; /* Even Darker Soft Blue */
+    --sidebar-ring: 174 100% 35%; /* Slightly Lighter Teal */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
